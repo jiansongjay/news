@@ -1,0 +1,190 @@
+.subtitle
+{
+    color: #aaaaaa;
+}
+.title
+{
+    text-align: center;
+}
+.mycontent
+{
+    text-indent: 2em;
+}
+.myimage
+{
+    margin-bottom: 1em;
+    margin-top: 1em
+}
+#loading
+{
+    background:url('images/loading.gif') 0 0 no-repeat;
+    background-position: center;
+    width:100%;
+    height:40px;
+
+}
+
+.my-page .myimage{
+    max-width: 390px;
+}
+.my-page .myimage p{
+    background: rgba(0, 0, 0, 0.99);
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    text-shadow: none;
+    color: #ffffff;
+    display: block;
+    max-width: 390px
+}
+
+@media all and (min-width: 210px){
+
+    .my-page .ui-content {
+        padding: 9px;
+    }
+    .my-page .ui-listview .ui-li.ui-btn {
+        float: left;
+        width: 90%;
+        height: 210px;
+        margin: 9px 1.2%;
+        margin-bottom: 30;
+        border-width: 0;
+        margin: 5%;
+    }
+
+    .my-page .ui-listview .ui-li.ui-btn-inner {
+        border: inherit;
+        border-width: 1px;
+        margin: -1px;
+    }
+    .my-page .ui-listview .ui-btn-inner,
+    .my-page .ui-listview .ui-btn-text,
+    .my-page .ui-listview .ui-link-inherit,
+    .my-page .ui-listview .ui-li-thumb {
+        width: 100%;
+        height: 100%;
+        display: block;
+        overflow: hidden;
+        color: rgba(230, 230, 230, 0);
+    }
+    .my-page .ui-listview .ui-link-inherit {
+        padding: 0 !important;
+        position: relative;
+    }
+
+    .my-page .ui-listview .ui-li,
+    .my-page .ui-listview .ui-btn-text,
+    .my-page .ui-listview .ui-link-inherit,
+    .my-page .ui-listview .ui-li-thumb {
+        -webkit-border-radius: inherit;
+        border-radius: inherit;
+    }
+    .my-page .ui-listview .ui-li-thumb {
+        height: auto;
+        max-width: 100%;
+        max-height: none;
+        margin: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .my-page .ui-listview .ui-icon {
+        display: none;
+    }
+
+    .my-page .ui-listview .ui-li-heading,
+    .my-page .ui-listview .ui-li-desc {
+        white-space: normal;
+        overflow: visible;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .my-page .ui-listview .ui-li-heading {
+        margin: 0;
+        padding: 20px;
+        bottom: 50%;
+    }
+    .my-page .ui-listview .ui-li-desc {
+        margin: 0;
+        padding: 0 20px;
+        min-height: 50%;
+        bottom: 0;
+        line-height: 1.5;
+    }
+
+    .ui-listview .ui-li-has-thumb .ui-li-heading,
+    .ui-listview .ui-li-has-thumb .ui-li-desc {
+        background: rgba(0, 0, 0, 0.82);
+        -webkit-background-clip: padding;
+        background-clip: padding-box;
+    }
+    .ui-listview .ui-li-has-thumb .ui-li-heading {
+        padding: 10px;
+        bottom: 0;
+    }
+    .ui-listview .ui-li-has-thumb .ui-li-desc {
+        padding: 0 10px;
+        min-height: 20%;
+        -webkit-border-bottom-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+        -webkit-border-bottom-right-radius: inherit;
+        border-bottom-right-radius: inherit;
+    }
+
+    .my-page .ui-listview .ui-li-desc.ui-li-aside {
+        padding: 2px 10px;
+        width: auto;
+        min-height: 0;
+        top: 0;
+        left: auto;
+        bottom: auto;
+        color: #c0c0c0;
+        background: #990099;
+        background: rgba(153,0,153,.85);
+        -webkit-border-top-right-radius: inherit;
+        border-top-right-radius: inherit;
+        -webkit-border-bottom-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+        -webkit-border-bottom-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .my-page .ui-listview .ui-btn:not(.ui-focus) {
+        -moz-box-shadow: 0px 0px 9px #111;
+        -webkit-box-shadow: 0px 0px 9px #111;
+        box-shadow: 0px 0px 9px #111;
+    }
+
+    .my-page .ui-listview .ui-btn:hover {
+        -moz-box-shadow: 0px 0px 12px #387bbe;
+        -webkit-box-shadow: 0px 0px 12px #387bbe;
+        box-shadow: 0px 0px 12px #387bbe;
+    }
+
+    .my-page .ui-listview .ui-btn {
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+}
+
+@media all and (min-width: 1020px){
+    .my-page .ui-content {
+        padding: 10px;
+    }
+
+    .my-page .ui-listview {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .my-page .ui-listview .ui-li.ui-btn {
+        width: 23%;
+        height: 230px;
+        margin: 10px 1%;
+    }
+}
+
