@@ -46,12 +46,13 @@
       }
       .comment_block .comment_input
       {
-        width:80%;
+        width:74%;
+        padding-left: 2px;
         float:left;
       }
       .comment_block .comment_btn
       {
-        width:19%;
+        width:24%;
         float:right;
       }
       .cpmment_block .comment_btn .ui-btn-inner
@@ -63,7 +64,7 @@
   </style>
 </head>
 <body>
-  <div data-role="page" class="my-page">
+  <div data-role="page" class="my-page" id="my-page">
     <div data-role="content">
       <input type="hidden" id="articleId" value="${id}">
       <textarea id="articleContent_template" style="display: none;">
@@ -72,7 +73,7 @@
         <div class="myimage">
           {#foreach $T.imageList as picid}
           <img  src={$T.picid} align="" class="picture" />
-          <div style="color: red;">{$T.abs}</div>
+          <div class="abstract">{$T.abs}</div>
           {#/for}
         </div>
         <div class="mycontent">
@@ -110,14 +111,16 @@
     $("#comment_input_text").on("focus",function(){
       $(".comment_block").hide();
       $(".comment_expand").show();
+      $("#comment_inptu_area").focus();
     })
 
     $(document).ready(function(){
       $("#comment_area").fixedtoolbar({tapToggle:false});
       $("div[data-role='content']").on("tap",function(){
-      $(".comment_expand").hide();
-      $(".comment_block").show();
-    })
+        $(".comment_expand").hide();
+        $(".comment_block").show();
+
+      })
     })
 
   </script>

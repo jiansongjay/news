@@ -28,9 +28,9 @@ $(document).ready(function () {
     var params = {};
     params.page = 1;
     params.perPage = perPage;
-    signAjax({
+    $.ajax({
         type:"get",
-        url:webUrl + "/list",
+        url:"data/list.json",
         data:params,
         dataType:"json",
         beforeSend:function () {
@@ -55,7 +55,7 @@ $(document).ready(function () {
                     var list_id = item.id;
                     var list_arr = [
                         '<li>',
-                        '<a href="./show?id=' + list_id + '"  data-transition="slide" data-ajax="false">',
+                        '<a href="./show?id=' + list_id + '"   data-ajax="true">',
                         '<img src="' + img_url + '" >',
                         '<h2>' + title + '</h2>',
 //                        abs,
@@ -87,9 +87,9 @@ $(window).on('scroll', function () {
         params.page = pageCount;
         params.perPage = perPage;
         if (pageCount <= totalPageCount) {
-            signAjax({
+            $.ajax({
                 type:"get",
-                url:webUrl + "/list",
+                url:"data/list.json",
                 data:params,
                 dataType:"json",
                 timeout:30000,

@@ -14,9 +14,9 @@ var showError = function (msg) {
 $(document).ready(function () {
     var params = {};
     params.id = $("#articleId").val();
-    signAjax({
+    $.ajax({
         type:"get",
-        url:webUrl + "/get",
+        url:"data/detail.json",
         data:params,
         dataType:"json",
         beforeSend:function () {
