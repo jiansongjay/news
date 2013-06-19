@@ -27,15 +27,22 @@
 .my-page .myimage{
     max-width: 390px;
 }
-.my-page .myimage p{
-    background: rgba(0, 0, 0, 0.99);
+.my-page .myimage .abstract{
+    /*background: rgba(0, 0, 0, 0.99);*/
     -webkit-background-clip: padding;
     background-clip: padding-box;
     text-shadow: none;
-    color: #ffffff;
+    color: #808080;
+    font-style: italic;
     display: block;
     max-width: 390px
 }
+
+.my-page textarea.ui-input-text{
+    height:38px;
+    max-height: 114px;
+}
+
 
 @media all and (min-width: 210px){
 
